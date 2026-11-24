@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Shopping Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <br><br>
+<input type="text" placeholder="Search products..." id="search">
+<button onclick="searchProducts()">Search</button>
+<br><br>
+
+    <h2>Our Products</h2>
+
+    <div class="product">
+    <h3>Product 1</h3>
+    <img src="https://placehold.co/200x150?text=Product+1" width="200">
+    <p>Price: ₹500</p>
+    <button onclick="addToCart('Product 1', 500)">
+        Add to Cart
+    </button>
+</div>
+    
+    <div class="product">
+        <h3>Product 2</h3>
+        <img src="https://placehold.co/200x150?text=Product+2" width="200">
+        <p>Price: ₹800</p>
+        <button onclick="addToCart('Product 2', 800)">
+            Add to Cart
+        </button>
+    </div>
+
+    <h2>Shopping Cart</h2>
+    <h3 id="total">Total: ₹0</h3>
+    <a href="checkout.html">Proceed to Checkout</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
